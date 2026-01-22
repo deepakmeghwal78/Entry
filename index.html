@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GOLDEN<span>LUXE</span></div>
+        <div class="menu-dots" onclick="toggleMenu()">⋮</div>
+    </nav>
+
+    <section class="hero">
+        <h1 class="reveal">Experience Elegance</h1>
+        <p class="reveal">Professional Design & Smooth Transitions</p>
+    </section>
+
+    <section class="product-section">
+        <div class="interaction-card reveal">
+            <div id="action-icon" class="square-round" onclick="handleIconStep()">
+                <span id="icon-text">View Product</span>
+            </div>
+            <p id="status-msg">Click to see details</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
