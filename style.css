@@ -1,53 +1,78 @@
-/* Body and Background */
-body {
-    background-color: #121212; /* Black background */
-    color: #FFFFFF;
-    font-family: 'Segoe UI', sans-serif;
+* {
     margin: 0;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-/* Golden Logo */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: white;
+    align-items: center;
+}
+
 .logo {
-    padding: 20px;
     font-size: 24px;
     font-weight: bold;
-    color: #D4AF37; /* Golden */
+    letter-spacing: 2px;
 }
 
-/* Square-Round Icon Design */
-.square-round {
-    width: 140px;
-    height: 140px;
-    border: 3px solid #D4AF37;
-    border-radius: 30px; /* Square Round look */
-    margin: 50px auto;
+.logo span {
+    color: #ff4757;
+}
+
+.hero {
+    height: 60vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/random/1600x900?minimalist');
+    background-size: cover;
+    color: white;
+}
+
+.product-section {
+    padding: 50px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    height: 200px;
+    background: #eee;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
-    background: rgba(212, 175, 55, 0.1);
-}
-
-/* Animations */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 1s all ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Dots Menu */
-.menu-dots {
-    font-size: 30px;
-    color: #D4AF37;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 15px;
 }
